@@ -1,25 +1,23 @@
-﻿using DevExpress.XtraGrid;
+﻿using DevExpress.Utils.Drawing;
 using DevExpress.XtraGrid.Views.Grid;
 using DevExpress.XtraGrid.Views.Grid.Drawing;
 using DevExpress.XtraGrid.Views.Grid.ViewInfo;
 using System;
 using System.Drawing;
 
-namespace WindowsApplication1 {
-    public class MyGridPainter : GridPainter {
+namespace WindowsApplication1
+{
+    public class MyGridPainter : GridPainter
+    {
         private bool _IsCustomPainting;
-        public bool IsCustomPainting {
-            get {
-                return _IsCustomPainting;
-            }
-            set {
-                _IsCustomPainting = value;
-            }
-        }
+
         public MyGridPainter(GridView view)
-            : base(view) {
+            : base(view)
+        {
         }
-        public void DrawMergedCell(MyMergedCell cell, PaintExEventArgs e) {
+
+        public void DrawMergedCell(MyMergedCell cell, DXPaintEventArgs e)
+        {
             int delta = cell.Column1.VisibleIndex - cell.Column2.VisibleIndex;
             if(Math.Abs(delta) > 1)
                 return;
@@ -39,11 +37,21 @@ namespace WindowsApplication1 {
             bounds.Width = targetRect.Width;
             bounds.Height = targetRect.Height;
             gridCellInfo1.ViewInfo.Bounds = bounds;
-            gridCellInfo1.ViewInfo.CalcViewInfo(e.Cache.Graphics);
+            GraphicsCache cache = new GraphicsCache(e);
+            gridCellInfo1.ViewInfo.CalcViewInfo(e.Graphics);
             IsCustomPainting = true;
-            gridCellInfo1.Appearance.FillRectangle(e.Cache, gridCellInfo1.Bounds);
-            DrawRowCell(new GridViewDrawArgs(e.Cache, vi, vi.ViewRects.Bounds), gridCellInfo1);
+            gridCellInfo1.Appearance.FillRectangle(cache, gridCellInfo1.Bounds);
+            DrawRowCell(new GridViewDrawArgs(cache, vi, vi.ViewRects.Bounds), gridCellInfo1);
             IsCustomPainting = false;
+        }
+
+        public bool IsCustomPainting {
+            get {
+                return _IsCustomPainting;
+            }
+            set {
+                _IsCustomPainting = value;
+            }
         }
 
     }
