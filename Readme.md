@@ -1,4 +1,4 @@
-# How to merge cells horizontally in GridView
+# OBSOLETE: How to merge cells horizontally in GridView
 
 ## This example is obsolete and starting with version 17.1 there is no easy way to implement this behavior
 
