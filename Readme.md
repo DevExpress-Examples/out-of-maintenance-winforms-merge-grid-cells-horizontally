@@ -6,7 +6,7 @@
 
 # Data Grid for Windows Forms - Emulate horizontal cell merging in GridView
 
-GridControl does not support horizontal cell merging out-of-the-box. This example creates a custom Painter class to emulate horizontal cell merging in a Grid View.
+[GridControl](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) does not support horizontal cell merging out-of-the-box. This example creates a custom painter class to emulate horizontal cell merging in a [Grid View](https://docs.devexpress.com/WindowsForms/3464/controls-and-libraries/data-grid/views/grid-view).
 
 <!-- default file list -->
 ## Files to Look At
