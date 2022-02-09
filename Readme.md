@@ -3,15 +3,18 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2472)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# OBSOLETE: How to merge cells horizontally in GridView
 
-## This example is obsolete and starting with version 17.1 there is no easy way to implement this behavior
+# OBSOLETE: Windows Forms - How to merge cells horizontally in a grid UI
 
-GridControl doesn't support horizontal cell merging. Instead, we recommend using our <a href="https://documentation.devexpress.com/windowsforms/12063/controls-and-libraries/spreadsheet">Spreadsheet</a> that supports cell merging out of the box:<br><br><a href="https://documentation.devexpress.com/windowsforms/15416/controls-and-libraries/spreadsheet/examples/cells/how-to-merge-cells-or-split-merged-cells">How to: Merge Cells or Split Merged Cells</a> <br>
+We recommend that you use the [WinForms Spreadsheet](https://documentation.devexpress.com/windowsforms/12063/controls-and-libraries/spreadsheet) control if you need a grid UI with the built-in cell merge feature. See the following topic for more information: [How to: Merge Cells or Split Merged Cells](https://documentation.devexpress.com/windowsforms/15416/controls-and-libraries/spreadsheet/examples/cells/how-to-merge-cells-or-split-merged-cells).
 
-## ***If the Spreadsheet control does not suit you, we will be happy to find the most appropriate solution for you if you describe your real-life scenario. Just click <a href="https://www.devexpress.com/Support/Center/Question/Create">here</a> to submit a ticket to our Support Center.***
 
-<b>See also:</b>
+The [GridControl](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) does not allow you to merge cells horizontally in v17.1 and higher.
 
-[DevExpress WinForms Troubleshooting - Grid Control](https://go.devexpress.com/CheatSheets_WinForms_Examples_T934742.aspx)
+## Documentation
+- [WinForms Spreadsheet](https://documentation.devexpress.com/windowsforms/12063/controls-and-libraries/spreadsheet)
+- [How to: Merge Cells or Split Merged Cells](https://documentation.devexpress.com/windowsforms/15416/controls-and-libraries/spreadsheet/examples/cells/how-to-merge-cells-or-split-merged-cells)
 
+## See Also:</b>
+
+- [DevExpress WinForms Troubleshooting - Grid Control](https://go.devexpress.com/CheatSheets_WinForms_Examples_T934742.aspx)
