@@ -12,7 +12,7 @@ We recommend that you use the [WinForms Spreadsheet](https://documentation.devex
 The [GridControl](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) does not allow you to merge cells horizontally in v17.1 and higher.
 
 ## Documentation
-- [Windows Forms Spreadsheet](https://documentation.devexpress.com/windowsforms/12063/controls-and-libraries/spreadsheet)
+- [WinForms Spreadsheet](https://documentation.devexpress.com/windowsforms/12063/controls-and-libraries/spreadsheet)
 - [How to: Merge Cells or Split Merged Cells](https://documentation.devexpress.com/windowsforms/15416/controls-and-libraries/spreadsheet/examples/cells/how-to-merge-cells-or-split-merged-cells)
 
 ## See Also:</b>
