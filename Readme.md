@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Data Grid for Windows Forms - Emulate horizontal cell merging in GridView
+# Data Grid for Windows Forms - Emulate horizontal cell merge in GridView
 
 [GridControl](https://docs.devexpress.com/WindowsForms/3455/controls-and-libraries/data-grid) does not support horizontal cell merging out-of-the-box. This example creates a custom painter class to emulate horizontal cell merging in a [Grid View](https://docs.devexpress.com/WindowsForms/3464/controls-and-libraries/data-grid/views/grid-view).
 
